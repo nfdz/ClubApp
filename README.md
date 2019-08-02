@@ -40,7 +40,7 @@ The application is made in Kotlin using native Android and common design pattern
 2. Enable and install **Firebase Functions**. Functions are located in **firebase_functions_src** folder.
 3. Enable and setup **Firebase Auth** (email/password). You can customize messages about create account, restore password, etc, there
 .<p align="center">
-  <img src="screenshots/admin-setup.png?raw=true" width="250" alt="Create admin"/>
+  <img src="screenshots/admin-setup.png?raw=true" width="550" alt="Create admin"/>
 </p>
 4. Enable administrators creating the user manually in **Firebase Auth** and you also have to add the email to a list in the **Firebase Database**.
 5. Replace everywhere **YOUR.MEMBER.APP.ID.HERE** and **YOUR.ADMIN.APP.ID.HERE** for your ids. (Ctlr + Shift + R)
