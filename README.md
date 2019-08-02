@@ -38,10 +38,12 @@ The application is made in Kotlin using native Android and common design pattern
 
 1. Setup your **Firebase** project with your App Ids and Key hashes and copy your firebase files **google-services.json** to **adminApp** and **memberApp** folder.
 2. Enable and install **Firebase Functions**. Functions are located in **firebase_functions_src** folder.
-3. Enable and setup **Firebase Auth** (email/password). You can customize messages about create account, restore password, etc, there
+3. Enable and setup **Firebase Auth** (email/password). You can customize messages about create account, restore password, etc, there.
+
 .<p align="center">
   <img src="screenshots/admin-setup.png?raw=true" width="550" alt="Create admin"/>
 </p>
+
 4. Enable administrators creating the user manually in **Firebase Auth** and you also have to add the email to a list in the **Firebase Database**.
 5. Replace everywhere **YOUR.MEMBER.APP.ID.HERE** and **YOUR.ADMIN.APP.ID.HERE** for your ids. (Ctlr + Shift + R)
 6. Replace in **memberApp** **Strings.xml**  file next fields with your content: **app_name,club_about_content,club_contact_content, club_schedule_content, club_location_content, club_location_uri, club_location_uri_query, playlist_spotify_uri, club_facebook_url, club_facebook_url, event_url_host**.
