@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#d94227</color>
+    <color name="colorPrimaryDark">#d94227</color>
+    <color name="colorAccent">#d94227</color>
+
+    <color name="light">#FAFAFA</color>
+    <color name="dark">#212121</color>
+    <color name="gray">#666666</color>
+
+    <color name="textColorLight">@color/light</color>
+    <color name="textColorDark">@color/dark</color>
+    <color name="textColorGray">@color/gray</color>
+
+    <color name="splashScreenColor">@color/colorPrimary</color>
+
+    <color name="eventGoColor">#25a44f</color>
+    <color name="eventCancelColor">#d13217</color>
+    <color name="eventUnavailableColor">#666666</color>
+
+    <color name="chatOtherMessageBackgroundColor">#FFFFFF</color>
+    <color name="chatOwnMessageBackgroundColor">#dcf8c6</color>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_vertical_padding">8dp</dimen>
+    <dimen name="list_item_vertical_margin">8dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="dialog_top_padding">18dp</dimen>
+    <dimen name="dialog_horizontal_padding">24dp</dimen>
+
+    <dimen name="main_buttons_height">52dp</dimen>
+    <dimen name="event_actions_size">40dp</dimen>
+    <dimen name="event_horizontal_margin">6dp</dimen>
+    <dimen name="event_title_text_size">18sp</dimen>
+    <dimen name="event_subtitle_text_size">14sp</dimen>
+
+    <dimen name="user_actions_size">40dp</dimen>
+    <dimen name="user_horizontal_margin">6dp</dimen>
+    <dimen name="user_title_text_size">18sp</dimen>
+    <dimen name="user_subtitle_text_size">14sp</dimen>
+</resources>

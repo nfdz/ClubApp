@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="chat_text_max_length">10000</integer>
+    <integer name="alias_max_length">18</integer>
+    <integer name="alias_min_length">4</integer>
+
+</resources>

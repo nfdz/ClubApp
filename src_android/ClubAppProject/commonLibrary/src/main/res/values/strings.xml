@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="category_art">Art</string>
+    <string name="category_video">Video</string>
+    <string name="category_wellness">Wellness</string>
+    <string name="category_food">Food</string>
+    <string name="category_children">Children</string>
+    <string name="category_music">Music</string>
+    <string name="category_season">Season</string>
+
+</resources>

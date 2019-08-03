@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="list_vertical_padding">8dp</dimen>
+    <dimen name="list_item_action_size">44dp</dimen>
+    <dimen name="list_item_action_margin_right">10dp</dimen>
+    <dimen name="list_item_action_margin_top">3dp</dimen>
+    <dimen name="list_item_action_padding">8dp</dimen>
+    <dimen name="list_item_vertical_margin">8dp</dimen>
+    <dimen name="edit_text_inner_horizontal_padding">6dp</dimen>
+    <dimen name="dialog_top_padding">18dp</dimen>
+    <dimen name="dialog_horizontal_padding">24dp</dimen>
+    <dimen name="button_bottom_height">60dp</dimen>
+    <dimen name="header_text_size">28sp</dimen>
+
+    <dimen name="main_logo_height">26dp</dimen>
+    <dimen name="points_value_text_size">44sp</dimen>
+    <dimen name="points_content_vertical_margin">24dp</dimen>
+    <dimen name="points_content_text_vertical_margin">8dp</dimen>
+    <dimen name="club_content_vertical_margin">24dp</dimen>
+    <dimen name="club_content_text_vertical_margin">8dp</dimen>
+    <dimen name="splash_screen_logo_height">150dp</dimen>
+    <dimen name="splash_screen_header_text_size">@dimen/header_text_size</dimen>
+    <dimen name="sub_header_height">44dp</dimen>
+    <dimen name="tab_elevation">6dp</dimen>
+    <dimen name="choose_category_list_vertical_padding">8dp</dimen>
+    <dimen name="event_attendance_button_height">@dimen/button_bottom_height</dimen>
+    <dimen name="event_share_icon_size">40dp</dimen>
+    <dimen name="event_share_icon_padding">8dp</dimen>
+    <dimen name="event_title_size">18sp</dimen>
+    <dimen name="event_text_size">16sp</dimen>
+    <dimen name="confirm_attendance_qr_frame_margin">50dp</dimen>
+    <dimen name="user_header_vertical_padding">70dp</dimen>
+    <dimen name="user_buttons_height">52dp</dimen>
+    <dimen name="user_buttons_text_size">15sp</dimen>
+    <dimen name="user_logout_size">34dp</dimen>
+    <dimen name="user_logout_padding">6dp</dimen>
+    <dimen name="chat_message_margin_edge">7dp</dimen>
+    <dimen name="chat_message_margin_end">70dp</dimen>
+    <dimen name="chat_message_author_text_size">12sp</dimen>
+    <dimen name="chat_message_text_size">16sp</dimen>
+    <dimen name="chat_message_date_text_size">9sp</dimen>
+    <dimen name="chat_message_vertical_padding">2dp</dimen>
+    <dimen name="chat_message_box_round_edge">24dp</dimen>
+    <dimen name="chat_message_box_elevation">6dp</dimen>
+    <dimen name="chat_message_box_border_width">2dp</dimen>
+    <dimen name="chat_message_box_min_height">54dp</dimen>
+    <dimen name="chat_message_box_max_height">160dp</dimen>
+    <dimen name="chat_message_box_margin">4dp</dimen>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/club_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_default="wrap"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/club_tv_who_header"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/club_about_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/club_tv_who_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_text_vertical_margin"
+            android:textIsSelectable="true"
+            android:text="@string/club_about_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_who_header"/>
+
+        <TextView
+            android:id="@+id/club_tv_when_header"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/club_schedule_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_vertical_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_who_content"/>
+
+        <TextView
+            android:id="@+id/club_tv_when_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_text_vertical_margin"
+            android:text="@string/club_schedule_content"
+            android:textIsSelectable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_when_header"/>
+
+        <TextView
+            android:id="@+id/club_tv_contact_header"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/club_contact_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_vertical_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_when_content"/>
+
+        <TextView
+            android:id="@+id/club_tv_contact_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_text_vertical_margin"
+            android:text="@string/club_contact_content"
+            android:textIsSelectable="true"
+            android:autoLink="all"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_contact_header"/>
+
+        <ImageView
+            android:id="@+id/club_iv_instagram"
+            android:layout_width="@dimen/event_share_icon_size"
+            android:layout_height="@dimen/event_share_icon_size"
+            android:padding="@dimen/event_share_icon_padding"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_instagram"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_contact_content"/>
+
+        <ImageView
+            android:id="@+id/club_iv_facebook"
+            android:layout_width="@dimen/event_share_icon_size"
+            android:layout_height="@dimen/event_share_icon_size"
+            android:padding="@dimen/event_share_icon_padding"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_facebook"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_contact_content"
+            app:layout_constraintLeft_toRightOf="@+id/club_iv_instagram"/>
+
+        <TextView
+            android:id="@+id/club_tv_where_header"
+            android:textSize="@dimen/header_text_size"
+            android:text="@string/club_location_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_vertical_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_iv_instagram"/>
+
+        <TextView
+            android:id="@+id/club_tv_where_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/club_content_text_vertical_margin"
+            android:text="@string/club_location_content"
+            android:textIsSelectable="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_where_header"/>
+
+        <ImageView
+            android:id="@+id/club_iv_where_maps"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/image_club_location"
+            android:layout_marginTop="@dimen/club_content_vertical_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club_tv_where_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

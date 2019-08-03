@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/main_chat"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_chat_light"
+        android:title="@string/menu_main_chat"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/main_club"
+        android:orderInCategory="300"
+        android:title="@string/menu_main_club"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/main_playlist"
+        android:orderInCategory="300"
+        android:title="@string/menu_main_playlist"
+        app:showAsAction="never"/>
+
+</menu>

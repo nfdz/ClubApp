@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashScreenColor">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        android:id="@+id/splash_screen_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_iv_logo"
+        app:layout_constraintBottom_toTopOf="@+id/splash_screen_container_form"
+        android:orientation="horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/splash_screen_iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splash_screen_logo_height"
+        app:srcCompat="@drawable/image_logo_square"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/splash_screen_container_form"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/splash_screen_container_form"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_iv_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/splash_screen_header_text_size"
+            android:paddingBottom="16dp"
+            android:text="@string/splash_screen_greetings"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/splash_screen_til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/splash_screen_tie_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorDark"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/splash_screen_email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/splash_screen_til_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/splash_screen_tie_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorDark"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="@string/splash_screen_pass" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/splash_screen_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColorLight"
+            android:text="@string/splash_screen_login"/>
+
+        <TextView
+            android:id="@+id/splash_screen_tv_reset_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="@dimen/edit_text_inner_horizontal_padding"
+            android:layout_marginRight="@dimen/edit_text_inner_horizontal_padding"
+            android:text="@string/splash_screen_reset_password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="@dimen/edit_text_inner_horizontal_padding"
+            android:layout_marginRight="@dimen/edit_text_inner_horizontal_padding"
+            android:text="@string/splash_screen_help"/>
+
+        <TextView
+            android:id="@+id/splash_screen_tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/edit_text_inner_horizontal_padding"
+            android:layout_marginRight="@dimen/edit_text_inner_horizontal_padding"
+            android:text="@string/splash_screen_contact"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splash_screen_iv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/splash_screen_container_form"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_container_form"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

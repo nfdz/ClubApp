@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">CLUB APP ADMIN</string>
+
+    <string name="main_menu_exit">Exit</string>
+    <string name="main_events_button">Events</string>
+    <string name="main_users_button">Users</string>
+    <string name="main_alerts_button">Alerts</string>
+    <string name="main_qrs_button">QR codes</string>
+    <string name="main_chat_button">Chat</string>
+    <string name="main_email">Email</string>
+    <string name="main_password">Password</string>
+    <string name="main_login_button">Login</string>
+    <string name="main_login_fail">Email/Password is not correct</string>
+
+    <string name="events_title">Events</string>
+    <string name="events_confirm_delete_title">Confirmation</string>
+    <string name="events_confirm_delete_message">Are you sure that you want to delete this event?\n - %s (%s)</string>
+    <string name="events_confirm_deleting">Deleting...</string>
+
+    <string name="event_editor_edit_mode_title">Edit event</string>
+    <string name="event_editor_add_mode_title">Add event</string>
+    <string name="event_editor_title">Title</string>
+    <string name="event_editor_description">Description</string>
+    <string name="event_editor_image_url">Image URL</string>
+    <string name="event_editor_facebook_url">Facebook URL</string>
+    <string name="event_editor_instagram_url">Instagram URL</string>
+    <string name="event_editor_date">Date (HH:mm dd/MM/yy)</string>
+    <string name="event_editor_date_repeat">Weeks</string>
+    <string name="event_editor_button_save">Save</string>
+    <string name="event_editor_date_format_error">Date format error</string>
+    <string name="event_editor_title_error">Title is empty</string>
+    <string name="event_editor_save_error">There was an error saving the event</string>
+
+    <string name="event_attendance_title">Attendance</string>
+    <string name="event_attendance_refresh_error">There was an error loading users</string>
+
+    <string name="users_title">Users</string>
+    <string name="users_disable_title">Confirmation</string>
+    <string name="users_disable_message">Do you want to disable this user?\n - %s (%s)</string>
+    <string name="users_enable_title">Confirmation</string>
+    <string name="users_enable_message">Do you want to enable this user?\n - %s (%s)</string>
+    <string name="users_editing_state">Editing state...</string>
+    <string name="users_add_from_csv_report">%s/%s users created successfully</string>
+    <string name="users_add_from_csv_empty">No users to create detected</string>
+    <string name="users_search_button">Search</string>
+    <string name="users_search_hint">Full name</string>
+    <string name="users_refresh_error">There was an error loading users</string>
+
+    <string name="user_editor_edit_mode_title">Edit user</string>
+    <string name="user_editor_add_mode_title">Add user</string>
+    <string name="user_editor_button_save">Save</string>
+    <string name="user_editor_fullname">Full name</string>
+    <string name="user_editor_email">Email</string>
+    <string name="user_editor_birthday">Birthday (dd/MM/yy)</string>
+    <string name="user_editor_alias">Alias</string>
+    <string name="user_editor_address">Address</string>
+    <string name="user_editor_phone_number">Phone number</string>
+    <string name="user_editor_points">Points</string>
+    <string name="user_editor_highlight_chat">Highlight chat</string>
+    <string name="user_editor_sign_up">Member since %s</string>
+    <string name="user_editor_birthday_format_error">Birthday format error</string>
+    <string name="user_editor_email_error">Email is empty</string>
+    <string name="user_editor_save_error">There was an error saving the user</string>
+    <string name="user_editor_save_create_error">There was an error creating the account</string>
+    <string name="user_editor_save_already_error">User already exists</string>
+
+    <string name="alerts_title">Alerts</string>
+    <string name="alerts_content_title">Title</string>
+    <string name="alerts_content_message">Message</string>
+    <string name="alerts_content_send">Send</string>
+    <string name="alerts_content_empty_error">No field can be empty</string>
+    <string name="alerts_send_error">There was an error sending alert</string>
+
+    <string name="qrs_title">QR Codes</string>
+    <string name="qrs_delete_title">Confirmation</string>
+    <string name="qrs_delete_message">Are you sure that you want to delete this code?\n - %s</string>
+    <string name="qrs_delete_deleting">Deleting...</string>
+    <string name="qrs_add_dialog_save">Save</string>
+    <string name="qrs_add_dialog_code">Code</string>
+    <string name="qrs_add_error">There was an error saving QR</string>
+
+    <string name="chat_title">Chat</string>
+    <string name="chat_msg_date_hint">Msg before date (HH:mm dd/MM/yy)</string>
+    <string name="chat_msg_delete">Delete</string>
+    <string name="chat_date_error">Input date is wrong</string>
+    <string name="chat_delete_error">There was an error deleting chat messages</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/chat_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/chat_et_limit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/chat_msg_date_hint"
+            android:maxLines="1"
+            android:maxLength="14"
+            android:inputType="datetime"/>
+
+        <Button
+            android:id="@+id/chat_btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColorLight"
+            android:text="@string/chat_msg_delete"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/chat_pb_loading"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

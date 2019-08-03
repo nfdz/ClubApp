@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendar_cv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:headerColor="@color/gray"
+        app:headerLabelColor="@color/textColorLight"
+        app:abbreviationsBarColor="@color/gray"
+        app:abbreviationsLabelsColor="@color/textColorLight"
+        app:daysLabelsColor="@color/textColorDark"
+        app:todayLabelColor="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/calendar_tv_day"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/sub_header_height"
+        android:background="@color/gray"
+        android:textColor="@color/light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|start"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAllCaps="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:text="11/11/2080"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/calendar_iv_day_unselect"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_close_light"
+        android:background="?attr/selectableItemBackground"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/calendar_tv_day"
+        app:layout_constraintTop_toTopOf="@+id/calendar_tv_day"
+        app:layout_constraintBottom_toBottomOf="@+id/calendar_tv_day"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/calendar_srl_refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_tv_day"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendar_rv_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingTop="@dimen/list_vertical_padding"
+            android:paddingBottom="@dimen/list_vertical_padding"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_event"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

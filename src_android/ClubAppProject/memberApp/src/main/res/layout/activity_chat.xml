@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_container"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_rv_messages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/chat_message_vertical_padding"
+        android:paddingBottom="@dimen/chat_message_vertical_padding"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:reverseLayout="true"
+        tools:listitem="@layout/item_chat_other_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chat_et_message"/>
+
+    <EditText
+        android:id="@+id/chat_et_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/chat_message_box_min_height"
+        android:maxHeight="@dimen/chat_message_box_max_height"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:hint="@string/chat_write_hint"
+        android:layout_marginLeft="@dimen/chat_message_box_margin"
+        android:layout_marginRight="@dimen/chat_message_box_margin"
+        android:layout_marginBottom="@dimen/chat_message_box_margin"
+        android:paddingTop="@dimen/chat_message_box_border_width"
+        android:paddingBottom="@dimen/chat_message_box_border_width"
+        android:paddingLeft="@dimen/chat_message_box_round_edge"
+        android:paddingRight="@dimen/chat_message_box_round_edge"
+        app:elevation="@dimen/chat_message_box_elevation"
+        android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        android:imeOptions="actionSend|flagNoEnterAction"
+        android:textColor="@color/textColorDark"
+        android:background="@drawable/selector_chat_message_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/chat_iv_send"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/chat_pb_send_loading"
+        android:visibility="invisible"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        app:layout_constraintTop_toTopOf="@+id/chat_iv_send"
+        app:layout_constraintLeft_toLeftOf="@+id/chat_iv_send"
+        app:layout_constraintRight_toRightOf="@+id/chat_iv_send"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_iv_send"/>
+
+    <ImageView
+        android:id="@+id/chat_iv_send"
+        android:layout_width="@dimen/chat_message_box_min_height"
+        android:layout_height="@dimen/chat_message_box_min_height"
+        app:srcCompat="@drawable/ic_send_light"
+        app:elevation="@dimen/chat_message_box_elevation"
+        android:layout_marginRight="@dimen/chat_message_box_margin"
+        android:layout_marginEnd="@dimen/chat_message_box_margin"
+        android:layout_marginBottom="@dimen/chat_message_box_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat_fab_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_down_light"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chat_et_message"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

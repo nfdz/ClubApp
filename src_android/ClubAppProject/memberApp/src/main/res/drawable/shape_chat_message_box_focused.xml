@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@android:color/white"/>
+    <stroke android:width="@dimen/chat_message_box_border_width" android:color="@color/colorAccent" />
+    <corners
+        android:bottomRightRadius="@dimen/chat_message_box_round_edge"
+        android:bottomLeftRadius="@dimen/chat_message_box_round_edge"
+        android:topLeftRadius="@dimen/chat_message_box_round_edge"
+        android:topRightRadius="@dimen/chat_message_box_round_edge"/>
+</shape>

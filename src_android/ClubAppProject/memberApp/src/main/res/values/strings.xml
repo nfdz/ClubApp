@@ -1,0 +1,163 @@
+<resources>
+
+    <string name="app_name">Club App</string>
+
+    <string name="menu_main_chat">Chat</string>
+    <string name="menu_main_club">Club</string>
+    <string name="menu_main_playlist">Playlist</string>
+
+    <string name="main_tab_home">Home</string>
+    <string name="main_tab_calendar">Calendar</string>
+    <string name="main_tab_user">You</string>
+
+    <string name="home_no_filter">All rooms</string>
+    <string name="home_no_content">No scheduled events soon</string>
+
+    <string name="choose_category_title">Category</string>
+
+    <string name="user_alias_empty">Alias</string>
+    <string name="user_my_bookings">My bookings</string>
+    <string name="user_my_points">My points</string>
+    <string name="user_my_data">My data</string>
+    <string name="user_member_date_text_format">Member since %1$s</string>
+    <string name="user_save_alias_ok">Save</string>
+    <string name="user_save_alias_valid">It must contain only letters <b>a-Z</b>, <b>0-9</b>, <b>-</b>, <b>_</b> and spaces. Minimum 4, maximum 18 characters</string>
+    <string name="user_invalid_alias_title">Invalid</string>
+    <string name="user_invalid_alias_msg">Alias is not valid, please check that it complains with requirements.</string>
+    <string name="user_conflict_alias_title">Conflict</string>
+    <string name="user_conflict_alias_msg">Sorry but this alias is used by other member.</string>
+    <string name="user_save_alias_error">There was a problem saving alias, please try again later</string>
+    <string name="user_logout_title">Logout</string>
+    <string name="user_logout_message">Are you sure that you want to logout?</string>
+
+    <string name="bookings_title">Bookings</string>
+    <string name="user_data_title">Your data</string>
+    <string name="user_data_save">Save</string>
+    <string name="user_data_full_name">Full name (unmodifiable)</string>
+    <string name="user_data_email">Email (unmodifiable)</string>
+    <string name="user_data_birthday">Birthday (dd/mm/yy)</string>
+    <string name="user_data_birthday_pattern">dd/mm/yy</string>
+    <string name="user_data_address">Address</string>
+    <string name="user_data_phone">Phone number</string>
+    <string name="user_data_change_password">Change password</string>
+    <string name="user_data_invalid_birthday">Birthday is invalid, please check that complains the pattern</string>
+    <string name="user_data_save_data_error">There was a problem saving data, please try again later</string>
+    <string name="user_data_password_check_email">Check your email to continue with password change process</string>
+    <string name="user_data_password_change_error">There was an error trying change your password, please try again later and re-login if problem continue</string>
+
+    <string name="points_title">Your points</string>
+    <string name="points_you_have">You have</string>
+    <string name="points_unit">points</string>
+    <string name="points_get_points_header">Get points</string>
+    <string name="points_get_points_content">To get points you just have to participate and enjoy with us. For example, each time you confirm attendance at an activity you immediately earn 10 points.</string>
+    <string name="points_spend_points_header">Spend points</string>
+    <string name="points_spend_points_content">You can spend your points on fabulous prizes and special discounts.</string>
+
+    <string name="club_title">Club</string>
+    <string name="club_about_header">About us</string>
+    <string name="club_about_content">ABOUT US CONTENT.</string>
+    <string name="club_schedule_header">Schedule</string>
+    <string name="club_schedule_content">GENERAL SCHEDULE CONTENT</string>
+    <string name="club_contact_header">Contact</string>
+    <string name="club_contact_content">Mail: CLUB.MAIL@EMAIL.COM\nTlf.: +XX XXX XXX XXX / From XX:XXh to XX:XXh</string>
+    <string name="club_location_header">Location</string>
+    <string name="club_location_content">CLUB ADDRESS</string>
+    <string name="club_location_uri" translatable="false">geo:1,-1</string>
+    <string name="club_location_uri_query" translatable="false">CLUB NAME, ADDRESS</string>
+    <string name="club_open_map_error">It is not possible to open location in a map application, please check you have one of them available</string>
+    <string name="playlist_spotify_uri">spotify:user:spotify:playlist:XXXXXXX</string>
+    <string name="playlist_spotify_open_error">It is not possible to open spotify playlist, please check you have the application available</string>
+    <string name="club_facebook_url" translatable="false">https://facebook.com/XXXXXXXX/</string>
+    <string name="club_instagram_url" translatable="false">https://www.instagram.com/XXXXXXXX/</string>
+
+    <string name="event_title">Event</string>
+    <string name="event_attendance_go">Sign up</string>
+    <string name="event_attendance_cancel">Cancel attendance</string>
+    <string name="event_attendance_unavailable_change">Unavailable sign up</string>
+    <string name="event_attendance_unavailable_change_in">Unavailable cancel</string>
+    <string name="event_attendance_unavailable_confirmed">Confirmed</string>
+    <string name="event_attendance_qr">Confirm attendance with QR</string>
+    <string name="event_confirmation_title">Are you sure?</string>
+    <string name="event_confirmation_want_to_go_text">If you sign up you are committing to attend the event. It is very useful for us to manage the event. You could confirm your attendance with the QR code and you will earn points you can use in the future.</string>
+    <string name="event_confirmation_cancel_text">It is a pity you can not attend this wonderful event. If you change your mind, you can sign up again.</string>
+    <string name="event_unavailable_change_attendance">It is not possible to change your attendance with such a little time before the event, next time please be more careful as it is very important for us.</string>
+    <string name="event_already_confirmed">The event is already confirmed!</string>
+    <string name="event_share_error">There was a problem sharing the event</string>
+    <string name="event_facebook_error">There was a problem opening facebook event</string>
+    <string name="event_instagram_error">There was a problem opening instagram event</string>
+    <string name="event_sign_up_error">There was a problem signing up to the event</string>
+    <string name="event_cancel_error">There was a problem cancelling attendance to the event</string>
+    <string name="event_add_calendar">Add to calendar</string>
+    <string name="event_add_calendar_error">There was an error opening calendar application</string>
+    <string name="event_share_text">Join to this awesome event in the club: %s</string>
+    <string name="event_invalid">Event is not enabled</string>
+    <string name="event_url_host" translatable="false">www.YOUR_CLUB_WEB_FB_ETC.com</string>
+
+    <string name="last_sync_timestamp" translatable="false">last_sync</string>
+    <string name="splash_screen_email">Email</string>
+    <string name="splash_screen_pass">Password</string>
+    <string name="splash_screen_login">Login</string>
+    <string name="splash_screen_greetings">Greetings!</string>
+    <string name="splash_screen_reset_password">Reset password</string>
+    <string name="splash_screen_reset_password_check_email">Check your email to continue reset password process</string>
+    <string name="splash_screen_reset_password_error">There is a problem resetting password of given email, please check that is correct</string>
+    <string name="splash_screen_help">If you need help, please ask the organization</string>
+    <string name="splash_screen_contact">Contact</string>
+    <string name="splash_screen_connection_error">Oops! There is a problem with the internet, please try again later</string>
+    <string name="splash_screen_credentials_error">The email/password is not correct, please review and try again🧐</string>
+
+    <string name="disabled_user_error">User is disabled, contact admin for further information</string>
+    <string name="sync_data_error">There was an error syncing data</string>
+
+    <string name="confirm_attendance_title">Scan QR attendance code</string>
+    <string name="confirm_attendance_qr_reader_error">Oops! There is a problem with QR reader</string>
+    <string name="confirm_attendance_permissions_text">Camera permission is mandatory in order to scan QR code</string>
+    <string name="confirm_attendance_permissions_title">Camera permission</string>
+    <string name="confirm_attendance_invalid_code">Scanned code is invalid</string>
+    <string name="confirm_attendance_error_confirming">Oops! There is a problem with the internet, please try again later</string>
+
+    <string name="chat_title">Chat</string>
+    <string name="menu_chat_settings_notifications">Notifications settings</string>
+    <string name="chat_write_hint">Type a message</string>
+    <string name="chat_clipboard_label">Chat message</string>
+    <string name="chat_new_message">New message</string>
+    <string name="chat_send_error">Error sending message</string>
+    <string name="chat_clipboard_message">Message copied to clipboard</string>
+    <string name="chat_welcome_title">Welcome</string>
+    <string name="chat_welcome_message">This chat is a shared space for al members. Please be respectful and enjoy.</string>
+    <string name="chat_first_time_preference_key" translatable="false">first_time</string>
+    <string name="chat_first_time_preference_default" translatable="false">true</string>
+    <string name="notification_channel_id" translatable="false">app_notifications</string>
+    <string name="notification_channel_title">Notifications</string>
+    <string name="notification_channel_description">Notification channels related with chat messages and alerts</string>
+    <string name="chat_notifications_settings_error">Cannot open notification settings application, check it manually</string>
+
+    <!-- Categories -->
+    <string name="category_preference_key" translatable="false">selected_category</string>
+    <string name="category_preference_default" translatable="false">NULL</string>
+
+    <!-- Calendar widget -->
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/user_header_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/user_tv_full_name"/>
+
+    <ProgressBar
+        android:id="@+id/user_pb_loading_alias"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/user_tv_alias"
+        app:layout_constraintLeft_toLeftOf="@+id/user_tv_alias"
+        app:layout_constraintRight_toRightOf="@+id/user_tv_alias"
+        app:layout_constraintBottom_toBottomOf="@+id/user_tv_alias"/>
+
+    <TextView
+        android:id="@+id/user_tv_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_alias_empty"
+        android:textColor="@color/textColorLight"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/user_header_vertical_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/user_tv_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@"
+        android:alpha="0.7"
+        android:padding="4dp"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
+        app:layout_constraintRight_toLeftOf="@+id/user_tv_alias"
+        app:layout_constraintTop_toTopOf="@+id/user_tv_alias"
+        app:layout_constraintBottom_toBottomOf="@+id/user_tv_alias"/>
+
+    <TextView
+        android:id="@+id/user_tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Lorem Ipsum Garcia"
+        android:textSize="16sp"
+        android:textColor="@color/textColorLight"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/user_header_vertical_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_tv_alias"/>
+
+    <ImageView
+        android:id="@+id/user_iv_edit_alias"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="4dp"
+        app:srcCompat="@drawable/ic_edit_light"
+        android:alpha="0.7"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintTop_toTopOf="@+id/user_tv_alias"
+        app:layout_constraintLeft_toRightOf="@+id/user_tv_alias"/>
+
+    <TextView
+        android:id="@+id/user_tv_member_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Member since 11/11/2015"
+        android:textColor="@color/textColorLight"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/user_header_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/user_iv_logout"
+        android:layout_width="@dimen/user_logout_size"
+        android:layout_height="@dimen/user_logout_size"
+        app:srcCompat="@drawable/ic_logout_light"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/user_logout_title"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/user_logout_padding"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@+id/user_header_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/user_btn_bookings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_buttons_height"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/user_buttons_text_size"
+            android:text="@string/user_my_bookings"/>
+
+        <Button
+            android:id="@+id/user_btn_points"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_buttons_height"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/user_buttons_text_size"
+            android:text="@string/user_my_points"/>
+
+        <Button
+            android:id="@+id/user_btn_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_buttons_height"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/user_buttons_text_size"
+            android:text="@string/user_my_data"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
