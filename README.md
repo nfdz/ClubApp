@@ -1,7 +1,16 @@
 # ClubApp
-Android application to manage events, users and loyalty of your club. In the future it will be implemented for iOS and Web.
+Android application to manage events, users and loyalty of your club.
 
 The application is made in Kotlin using native Android and common design patterns so it is very easy to fork, modify and extend according to your needs.
+
+## About
+This project was developed as an open source, educational and non-profit project for a regional cultural club.
+
+It is functional but not completely finished, there are many points that are unpolished and need to be improved. 
+
+⚠️ *The project is currently discontinued* ⚠️
+
+Feel free to fork it, hack it and make it yours :)
 
 ## Features
 
@@ -52,15 +61,10 @@ The application is made in Kotlin using native Android and common design pattern
 9. You can modify text and images of event categories. The categories are defined in **EventCategory** enum class in **commonLibrary** project. String texts and drawables are referred from there.
 10. You can modify App colors in **colors.xml** file in **membersApp** and **adminApp**.
 
-## TODO
-* Implement iOS and Web apps.
-
-### Code quality improvements
-* Use repository pattern to handle persistence and firebase, and use it in interactors.
-* Use MPV pattern in adminApp.
-
-## About
-This project was developed as an open source and non-profit project for a cultural association in my city. There is a lot of work to do to make it more complete but currently it meets the goals we set at the beggining of the project. Feel free to fork it, hack it and make it yours :).
+### Pending Improvements
+* Implement repository pattern and improve the Dependency Inversion (Firebase and so on).
+* The adminApp is a proof of concept, implement it properly sharing logic and models with the memberApp.
+* Implement more tests to improve the coverage.
 
 ## License
 
