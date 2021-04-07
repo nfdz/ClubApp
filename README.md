@@ -1,5 +1,5 @@
 
-⚠️  **The project is currently discontinued** ⚠️
+⚠️  **This project has been discontinued** ⚠️
 
 # ClubApp
 Android application to manage events, users and loyalty of your club.
