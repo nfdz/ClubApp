@@ -8,7 +8,7 @@ This project was developed as an open source, educational and non-profit project
 
 It is functional but not completely finished, there are many points that are unpolished and need to be improved. 
 
-⚠️ *The project is currently discontinued* ⚠️
+⚠️  **The project is currently discontinued** ⚠️
 
 Feel free to fork it, hack it and make it yours :)
 
